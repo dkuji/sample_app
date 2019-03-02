@@ -17,6 +17,7 @@ class UsersIndexTest < ActionDispatch::IntegrationTest
       assert_select 'a[href=?]', user_path(user), text: user.name
       unless user == @admin
         assert_select 'a[href=?]', user_path(user), text: 'delete'
+        assert user.activated?
       end
     end
     assert_difference 'User.count', -1 do
