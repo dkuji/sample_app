@@ -26,3 +26,5 @@
 /spring/*.pid
 
 vendor/bundle/*
+
+.env
