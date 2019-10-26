@@ -16,6 +16,7 @@ gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.7.0'
 gem 'bootstrap-sass', '3.3.7'
 gem 'dotenv-rails', '2.7.1', groups: [:development, :test]
+gem 'prometheus_exporter', '0.4.13'
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'
